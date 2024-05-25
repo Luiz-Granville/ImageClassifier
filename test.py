@@ -12,7 +12,7 @@ img_label = test_labels[0]
 
 # Salvar a imagem como um arquivo temporário 'test_image.jpg'
 img = image.array_to_img(img_array)
-img.save('test_image.jpg')
+img.save('images/test_image.jpg')
 
 # Testar a imagem usando a API
 url = 'http://127.0.0.1:5000/predict'
