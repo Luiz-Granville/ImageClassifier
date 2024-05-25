@@ -21,7 +21,6 @@ Este projeto implementa um modelo de rede neural convolucional (CNN) para classi
 │ └── model_weights.h5 # Arquivo com os pesos do modelo treinado
 ├── test.py # Script de teste da API
 ├── README.md # Instruções de setup e uso
-├── report.md # Relatório detalhado do projeto
 └── requirements.txt # Dependências da API
 ```
 
