@@ -107,7 +107,7 @@ def create_model():
 Utilizamos a arquitetura VGG16 pré-treinada no ImageNet para aproveitar o aprendizado de características complexas que o modelo já possui. As camadas da base são congeladas para preservar esses pesos.
 
 ### Dropout
-Adicionamos uma camada Dropout com uma taxa de 50% após a camada densa de 256 neurônios para prevenir overfitting.
+Adicionamos uma camada Dropout com uma taxa de 50% após a camada densa de 512 neurônios para prevenir overfitting.
 
 ### Regularização L2
 Aplicamos regularização L2 na camada densa para também ajudar a prevenir overfitting.
@@ -194,14 +194,13 @@ O modelo demonstrou alta precisão na classificação das imagens de teste. A ut
 
 A abordagem de Transfer Learning se mostrou eficaz para a tarefa de classificação de imagens do CIFAR-10. A combinação de técnicas de otimização, como Dropout, regularização L2 e Early Stopping, foi crucial para alcançar um bom desempenho.
 
-Recomenda-se explorar outras arquiteturas pré-treinadas, como ResNet ou Inception, para verificar se há melhorias adicionais no desempenho. Além disso, aumentar o conjunto de dados com técnicas de data augmentation pode ajudar a melhorar ainda mais a generalização do modelo.
+Minha recomedação é explorar outras arquiteturas pré-treinadas, como ResNet ou Inception, para verificar se há melhorias adicionais no desempenho. Além disso, testei a técnica de data augmentation e obtive piores resultados, talvez a forma como realizei não foi a mais adequada por isso também seria adequado testar essa impletentação em outras arquiteturas.
 
 ## Referências
 
 1. K. Simonyan, A. Zisserman, "Very Deep Convolutional Networks for Large-Scale Image Recognition," arXiv:1409.1556, 2014.
 2. CIFAR-10 Dataset: https://www.cs.toronto.edu/~kriz/cifar.html
 
-Este relatório detalha a estrutura do modelo, as técnicas de otimização utilizadas, o processo de treinamento e os resultados obtidos em testes de validação. Ele proporciona uma visão abrangente do trabalho realizado e das razões por trás das escolhas de design e técnicas aplicadas.
 
 
 
