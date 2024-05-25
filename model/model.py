@@ -1,4 +1,4 @@
-from tensorflow.keras import models, layers, applications
+from tensorflow.keras import models, layers, applications, applications, regularizers
 
 def create_model():
     # Criar o modelo base VGG16 pré-treinado
@@ -12,6 +12,7 @@ def create_model():
     model = models.Sequential([
         base_model,
         layers.Flatten(),
+        layers.Dense(64, activation='relu', kernel_regularizer=regularizers.l2(0.001)),
         layers.Dense(512, activation='relu'),
         layers.Dropout(0.5),
         layers.Dense(10, activation='softmax')

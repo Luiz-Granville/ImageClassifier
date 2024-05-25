@@ -1,4 +1,4 @@
-from tensorflow.keras import datasets, models, layers, callbacks, applications, regularizers
+from tensorflow.keras import datasets, models, layers, callbacks
 import utils
 import model
 
