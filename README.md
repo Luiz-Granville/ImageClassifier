@@ -6,6 +6,7 @@ Este projeto implementa um modelo de rede neural convolucional (CNN) para classi
 
 ## Estrutura do Projeto
 
+```plaintext
 /project-root
 ├── /api
 │ └── app.py # Código da API 
@@ -16,13 +17,13 @@ Este projeto implementa um modelo de rede neural convolucional (CNN) para classi
 ├── /model
 │ ├── train.py # Script para treinamento do modelo
 │ ├── model.py # Definição da arquitetura do modelo
-│ ├── utils.py # Funções utilitárias para carregar dados, etc.
+│ ├── utils.py # Funções utilitárias para carregar dados
 │ └── model_weights.h5 # Arquivo com os pesos do modelo treinado
 ├── test.py # Script de teste da API
 ├── README.md # Instruções de setup e uso
 ├── report.md # Relatório detalhado do projeto
 └── requirements.txt # Dependências da API
-
+```
 
 ## Configuração e Uso
 
